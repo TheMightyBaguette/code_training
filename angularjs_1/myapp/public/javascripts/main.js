@@ -1,0 +1,9 @@
+require.config({
+    baseUrl:"javascripts",
+    paths:{
+        'angular':'angular',
+        'angularAMD':'angularAMD.min'
+    },
+    shim:{'angularAMD':['angular']},
+    deps:['ng_logic/index']
+});

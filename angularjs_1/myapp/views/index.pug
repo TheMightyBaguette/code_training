@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div(ng-app="todoApp",style="border:solid",ng-controller="todoController")
+    input(ng-model="title")
+    button(ng-click="add()") Add
+    ul
+        li(ng-repeat="t in tasks") {{t}}
